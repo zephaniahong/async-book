@@ -38,7 +38,7 @@ Next, we need the following imports at the top of `src/main.rs`:
 ```
 
 Our executor will work by sending tasks to run over a channel. The executor
-will pull events off of the channel and run them. When a task is ready to
+will pull events off the channel and run them. When a task is ready to
 do more work (is awoken), it can schedule itself to be polled again by
 putting itself back onto the channel.
 
